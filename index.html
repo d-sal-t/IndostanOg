@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IndostanOg — The Sacred Server</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background: radial-gradient(circle at 10% 10%, #17043d, #0b2545 40%, #101010 100%);
+  color: #fff;
+  font-family: "Comic Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.7);
+}
+header {
+  background: linear-gradient(90deg, #ff5c8a, #ffd166);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 6px solid #fff;
+}
+.logo {
+  width: 96px; height: 96px;
+  background: url('https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif') center/cover no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+h1 { font-family: "Press Start 2P", monospace; font-size: 18px; margin: 0; color: #051; text-shadow: 1px 1px 0 #fff; }
+.container { display: flex; gap: 20px; padding: 24px; }
+nav, aside { width: 220px; background: rgba(255,255,255,0.05); padding: 12px; border-radius: 10px; }
+main { flex: 1; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; }
+a.button { display: block; background: linear-gradient(180deg,#ffd166,#ff5c8a); color: #111; text-align: center; margin: 8px 0; padding: 10px; font-weight: bold; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 0 rgba(0,0,0,0.3);}
+footer { text-align: center; font-size: 12px; padding: 16px; color: #ddd; background: rgba(0,0,0,0.5); }
+.marquee { background:#000; color:#0f0; padding:6px; font-family:monospace; border-radius:6px; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"></div>
+  <div>
+    <h1>INDOSTAN OG</h1>
+    <div class="marquee" id="marq">WELCOME, INITIATE — THE SERVER CALLS — MAY YOUR PINGS BE ETERNAL</div>
+  </div>
+</header>
+
+<div class="container">
+  <nav>
+    <a class="button" href="#news">Transmissions</a>
+    <a class="button" href="#lore">Sacred Lore</a>
+    <a class="button" id="pledgeBtn" href="javascript:void(0)">Take the Oath</a>
+  </nav>
+
+  <main>
+    <section id="news">
+      <h2>📡 Transmission 01 — “The Great Ping”</h2>
+      <p>Welcome to <strong>IndostanOg</strong>, the ultimate 2000s web shrine for our Discord cult-of-friends. This is a <em>satirical and educational</em> website — a tribute to bad design and good vibes.</p>
+      <p><strong>Educational note:</strong> Real cults use manipulation and isolation. We use memes and playlists instead. Be kind and critical out there.</p>
+    </section>
+
+    <section id="lore">
+      <h2>📜 Lore</h2>
+      <p>In 2004, a mighty connection timed out at exactly 404 ms. From that void rose IndostanOg, a community united by lag, laughter, and questionable GIFs.</p>
+      <ul>
+        <li>The Sacred Ritual of Refresh</li>
+        <li>The Night of Endless Pings</li>
+        <li>The Forbidden Playlist (Side B)</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside>
+    <h3>📘 Disclaimer</h3>
+    <p>This is a <strong>fictional, humorous site</strong> made by and for our Discord group. It’s not a real cult, just a parody of old web design and group lore.</p>
+    <p>Learn about healthy communities and how to spot real manipulation — we promote awareness, not weirdness.</p>
+  </aside>
+</div>
+
+<footer>
+  © 2025 IndostanOg — Fictional Satire • Licensed under CC BY-NC 4.0
+</footer>
+
+<script>
+  // simple marquee animation
+  const marq = document.getElementById('marq');
+  let text = marq.textContent;
+  setInterval(()=>{ text = text.slice(1) + text[0]; marq.textContent = text; }, 180);
+
+  // simple "oath" modal (fun, harmless)
+  const pledgeBtn = document.getElementById('pledgeBtn');
+  pledgeBtn.onclick = () => alert("You have sworn the Oath of Eternal Ping. Behold, your latency shall be blessed!");
+</script>
+
+</body>
+</html>
